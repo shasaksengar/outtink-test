@@ -1,0 +1,19 @@
+{
+  "name": "outtink-test",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript POM framework for QA security assignment",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:xss": "playwright test tests/xss-input-validation.spec.ts",
+    "test:session": "playwright test tests/session-management.spec.ts",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
